@@ -1,18 +1,44 @@
 // Font Family 
 
-$font1: 'Poppins', sans-serif;
+$font1: 'Montserrat', sans-serif;
 
-$font2: 'Oswald', sans-serif;
+$font2: 'Lora', serif;
 
 // Colors
-$white: #fff;
 
-$text: #7a808d;
+$white-pure: #fff;
+$black-pure: #000;
 
-$title: #460554;
+$white: #f7f6f2;
 
-$theme_color: #ffcc1f;
+$black: #011019;
 
+$base: #2A7CAE;
+$base-minus-1: lighten($base, 10%);
+$base-minus-2: lighten($base, 20%);
+$base-minus-3: lighten($base, 30%);
+$base-minus-4: lighten($base, 40%);
+
+$base-plus-1: darken($base, 10%);
+$base-plus-2: darken($base, 20%);
+$base-plus-3: darken($base, 30%);
+$base-plus-4: darken($base, 40%);
+
+$neutral: #BFCED4;
+
+$accent: #F66736;
+$accent-plus-1: darken($accent, 10%);
+
+$gold: #D4A961;
+
+$title: $base-plus-1;
+
+$text: $black;
+
+$theme_color: $accent;
+
+$border-radius: 4px;
+$border-radius2x: 8px;
 
 // Responsive Variables
 $laptop: 'only screen and (min-width: 1200px)';

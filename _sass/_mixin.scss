@@ -21,3 +21,10 @@
 	-webkit-transform-origin: $origin;
           transform-origin: $origin;
 }
+
+
+@mixin gradient ($color_one: $accent, $color_two: $accent-plus-1) {
+	background-image: -moz-linear-gradient( 180deg, $color_one 0%, $color_two 100%);
+	background-image: -webkit-linear-gradient( 180deg, $color_one 0%, $color_two 100%);
+	background-image: -ms-linear-gradient( 180deg, $color_one 0%, $color_two 100%);
+}

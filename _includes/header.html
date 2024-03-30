@@ -5,12 +5,13 @@
 			<div class="row align-items-center">
 				<div class="col-lg-2">
 					<div class="brand">
-					  <a href="{{site.url}}" class="logo"><img src="{{site.site_logo}}" class="img-fluid" alt="{{site.title}}"/></a>
+						<a href="{{site.url}}" class="logo"><img src="{{site.site_logo}}" class="img-fluid"
+								alt="{{site.title}}" /></a>
 					</div>
 				</div>
 				<div class="col-lg-10">
 					<div class="primary_menu" id="menu">
-                       {% include navigation.html %}
+						<!--{% include navigation.html %}-->
 					</div>
 				</div>
 			</div>
@@ -20,7 +21,8 @@
 				<div class="row align-items-center">
 					<div class="col-6">
 						<div class="brand_logo">
-							<a href="{{site.url}}"><img src="{{site.site_logo}}" class="img-fluid" alt="{{site.title}}"/></a>
+							<a href="{{site.url}}"><img src="{{site.site_logo}}" class="img-fluid"
+									alt="{{site.title}}" /></a>
 						</div>
 					</div>
 					<div class="col-6">
@@ -40,18 +42,18 @@
 				</div>
 				<ul class="sidebar-menu">
 					<li class="menu-item"><a href="{{site.url}}">Home</a></li>
-                    {% for menu in site.data.navigation %}
+					{% for menu in site.data.navigation %}
 					<li class="menu-item"><a href="{{menu.url}}">{{menu.text}}</a>
 						{% if menu.submenu %}
 						<ul class="sub-menu">
-						   {% for submenu_item in menu.submenu %}
-							 <li><a href="{{submenu_item.url}}">{{submenu_item.text}}</a></li>
-						   {% endfor %}
+							{% for submenu_item in menu.submenu %}
+							<li><a href="{{submenu_item.url}}">{{submenu_item.text}}</a></li>
+							{% endfor %}
 						</ul>
 						{% endif %}
 					</li>
 					{% endfor %}
-					<li class="menu-item"><a href="/contact/" class="deneb_btn">Hire Us</a></li>
+					<li class="menu-item"><a href="/contact/" class="deneb_btn">Contact</a></li>
 				</ul>
 			</div>
 		</div>

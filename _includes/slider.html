@@ -1,8 +1,8 @@
 <!-- Start deneb_banner section -->
 <section class="deneb_banner banner_v1">
-	<div class="shape_v1">
-		<img src="{{ "/assets/images/shape/shape_1.png" | absolute_url }}" class="shape_1" alt="slider one">
-	</div>
+	<!--div class="shape_v1">
+		<img src="{{ " /assets/images/shape/shape_1.png" | absolute_url }}" class="shape_1" alt="slider one">
+	</div-->
 	<div class="container">
 		<div class="hero_slider">
 			{% for slider in page.slider %}
@@ -13,7 +13,10 @@
 							<h1>{{ slider.heading }}</h1>
 							<h5>{{ slider.heading2 }}</h5>
 							<p>{{ slider.text }}</p>
-							<a href="{{ slider.button.link }}" class="deneb_btn">{{ slider.button.name }}</a>
+							<!--div class="btn_group">
+							<a href="{{ slider.button1.link }}" class="deneb_btn">{{ slider.button1.name }}</a>
+							<a href="{{ slider.button2.link }}" class="deneb_btn secondary">{{ slider.button2.name }}</a>
+							</div-->
 						</div>
 					</div>
 					<div class="col-lg-6">
@@ -23,7 +26,7 @@
 					</div>
 				</div>
 			</div>
-			{% endfor %}			
+			{% endfor %}
 		</div>
 	</div>
 </section>
