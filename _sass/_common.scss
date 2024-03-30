@@ -1,7 +1,7 @@
 // Start Default css
 
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Oswald:300,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
 	margin: 0;
@@ -22,24 +22,28 @@ a{
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
 	padding: 0;
-	font-family: $font2;
+	font-family: $font1;
 	color: $title;
 }
 h1{
 	font-family: $font1;
-	font-size: 58px;
+	font-size: 6em;
 	font-weight: 700;
+	line-height: 1;
 	
 	span {
-		font-family: $font2;
+		color: $neutral;
 	}
 }
+
 h2{
 	font-size: 45px;
 	font-weight: 700;
 }
 h3{
-	font-size: 30px;
+	font-size: 2em;
+	text-transform: uppercase;
+	color: $base-minus-1;
 }
 h4{
 	font-size: 22px;
@@ -113,7 +117,7 @@ body{
 		position: relative;
 		&:after{
 		    position: absolute;
-		    content: '';
+		    //content: '';
 		    top: -20px;
 		    background: url(../images/shape/title.png) no-repeat;
 		    display: inline-block;
@@ -123,24 +127,44 @@ body{
 		}
 	}
 }
+
+.btn_group {
+	.deneb_btn {
+		margin-right:1em;
+	}
+}
 .deneb_btn{
 	display: inline-block;
 	min-width: 127px;
 	height: 45px;
 	color: $white;
-	font: 500 15px $font1;
+	font: 700 1em $font1;
 	text-align: center;
-	background: $theme_color;
+	@include gradient;
 	line-height: 45px;
-	border-radius: 23px;
+	border-radius: 4px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	@include transition(.5s);
 	&:hover,&:focus{
-		color: $white !important;
-		box-shadow: 2.5px 4.33px 15px 0px rgba(254, 176, 0, 0.4);
+		background: darken($accent, 10%);
+		color: $white;
+		//box-shadow: 2.5px 4.33px 15px 0px rgba(254, 176, 0, 0.4);
+	}
+	
+	&.secondary {
+		color: $accent;
+		border: $accent 1px solid;
+		background: $white;
+		
+		&:hover,&:focus{
+			background: $accent;
+			color: $white;
+			//box-shadow: 2.5px 4.33px 15px 0px rgba(254, 176, 0, 0.4);
+		}
 	}
 }
+
 .link_btn{
 	color: $title;
 	&:before{
