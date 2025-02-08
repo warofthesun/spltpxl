@@ -6,8 +6,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thesplitpixel.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-site_logo: "/assets/images/logo_1.png"
-copyright: "Copyright &copy; 2020 <span>Deneb</span>. All rights reserved."
+site_logo: "/assets/images/dbcg_wordmark.png"
+copyright: "Copyright &copy; 2025 <span>Dan Brown</span>. All rights reserved."
 
 permalink: "/:title"
 
@@ -28,7 +28,7 @@ sass:
   sass_dir: _sass
   style: compressed
 
-site_preloader: true
+site_preloader: false
 
 collections:
   services:

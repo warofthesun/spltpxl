@@ -1,7 +1,7 @@
 // Start Default css
 
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://use.typekit.net/lfr5ysx.css');
 
 *{
 	margin: 0;
@@ -19,17 +19,22 @@ a{
 		outline: none;
 	}
 }
-h1,h2,h3,h4,h5,h6{
+h3,h4,h5,h6{
 	margin: 0;
 	padding: 0;
-	font-family: $font1;
+	font-family: $font2;
 	color: $title;
+	font-weight: bold;
 }
-h1{
+h1, h2 {
 	font-family: $font1;
-	font-size: 6em;
+	color: $base-plus-1;
+}
+
+h1{
+	font-size: 5.6875rem;
 	font-weight: 700;
-	line-height: 1;
+	line-height: .9;
 	
 	span {
 		color: $neutral;
@@ -37,13 +42,16 @@ h1{
 }
 
 h2{
-	font-size: 45px;
+	font-size: 4.25rem;
 	font-weight: 700;
+	line-height: 1.1176;
 }
 h3{
-	font-size: 2em;
+	font-size: 3.1875em;
 	text-transform: uppercase;
 	color: $base-minus-1;
+	line-height: 1.1765;
+	margin-bottom: .3rem;
 }
 h4{
 	font-size: 22px;
@@ -84,7 +92,7 @@ button{
 	}
 }
 body{
-	font-family: $font1;
+	font-family: $font2;
 	font-size: 15px;
 	line-height: 24px;
 	color: $text;
